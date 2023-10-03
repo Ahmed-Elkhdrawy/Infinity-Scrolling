@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Scrolling</title>
+    <link rel="shortcut icon" href="imgs/Infinity-logo-01.svg" type="image/svg">
+    <!-- Bootstrab File -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome File -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- The Normalize File -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- The Main Style File -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- JS Files -->
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/all.min.js" defer></script>
+    <script src="js/main.js " defer></script>
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-dark ">
+            <div class="container-fluid justify-content-start">
+                <a class="navbar-brand color-prim" href="index.html"><img src="imgs/Infinity-loader-2s-100px.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">Infinity</a>
+                    <ul class="color-prim m-0 d-flex flex-row gap-3 align-items-center list-unstyled">
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="about.html">About</a>
+                    </li>
+                    </ul>
+            </div>
+        </nav>
+        <h1 class="text-uppercase text-center mt-3 mb-5 fs-1 ">Unsplash API - Infinity Images</h1>
+    </header>
+    <section class="container imgs-wrapper m-20 gap-3" id="images-container">
+    </section>
+
+    <section class="loader text-center container-fluid position-sticky w-100 top-0 bottom-0  d-flex justify-content-center align-items-center bg-black bg-opacity-75 " id="loader" > <img src="imgs/Infinity-loader-2s-100px.svg" alt="Loading" width="60" height="60"> </section>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+:root {
+    --primary: #fffef8;
+    --second: #000000;
+}
+*{
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: var(--second);
+    color: var(--primary);
+}
+.color-prim {color: var(--primary) !important;}
+.color-sec {color: var(--second) !important;}
+.imgs-wrapper {columns: 5;}
+
+.imgs-wrapper .img-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    break-inside: avoid;
+    overflow: hidden;
+}
+.imgs-wrapper .img-box img {
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.imgs-wrapper .img-box .discr {
+    position: absolute;
+    width: 100%;
+    min-height: 50%;
+    max-height: 100%;
+    z-index: 90;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+    font-weight: 300;
+    background-image: linear-gradient(to top, var(--second), transparent);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+}
+.imgs-wrapper .img-box:hover .discr {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+}
+.loader {height: 100vh;}
+
+@media(max-width: 767px){.imgs-wrapper {columns: 2 ;}}
+@media (min-width: 768px) and (max-width: 991px){.imgs-wrapper {columns: 3 ;}}
+@media (min-width: 992px) {.imgs-wrapper {columns: 4 ;}}
